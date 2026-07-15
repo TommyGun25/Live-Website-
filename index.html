@@ -16,4 +16,19 @@
     </style>
     <h1>Hope you are well.</h1>
     <body>I really hope this works.</body>
+    <br>
+    <br>
+    <br>
+    
+    <button id="pressButton">Press me</button>
+<p id="counterText">You've pressed this button 0 times</p>
+
+<script>
+  let count = 0;
+
+  document.getElementById("pressButton").addEventListener("click", function() {
+    count = count + 1;
+    document.getElementById("counterText").textContent = "You've pressed this button " + count + " times";
+  });
+</script>
 </head>
